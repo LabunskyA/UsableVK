@@ -8,7 +8,7 @@ body {
     border-radius: 10%;
 }
 
-.wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img {
+.top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img {
     border-radius: 10%;
 }
 
