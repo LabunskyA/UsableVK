@@ -63,3 +63,7 @@
 
     background: rgba(147,173,200,0.2);
 }
+
+.im-page.im-page_classic .im-page--dialogs-footer {
+    width: 635px;
+}
