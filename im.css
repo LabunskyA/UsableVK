@@ -11,7 +11,7 @@
 }
 
 .im-page.im-page_classic .im-mess:not(.im-mess_fwd) {
-    width: 631px;
+    max-width: 631px;
 }
 
 .im-right-menu.ui_rmenu {
