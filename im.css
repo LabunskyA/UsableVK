@@ -15,13 +15,6 @@
 }
 
 .im-right-menu.ui_rmenu {
-    padding: 0;
-    top: 28px;
-    margin-left: 636px;
-    width: 159px;
-}
-
-.im-right-menu.ui_rmenu {
     box-shadow: none;
 }
 
@@ -56,7 +49,7 @@
     bottom: 11px !important;
     right: 15px;
 
-    width: 523px;
+    width: 522px;
     height: 26px;
 
     border-radius: 0;
@@ -64,6 +57,22 @@
     background: rgba(147,173,200,0.2);
 }
 
+/*bottom panel*/
 .im-page.im-page_classic .im-page--dialogs-footer {
     width: 635px;
+}
+
+/*left panel*/
+.im-right-menu.ui_rmenu {
+    padding: 0;
+    top: 28px;
+    margin-left: 636px;
+}
+
+.ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover {
+    max-width: 134px; /*159px - 25px side padding*/
+}
+
+.ui_rmenu_sep {
+    max-width: 129px;
 }
