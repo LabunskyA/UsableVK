@@ -44,6 +44,10 @@
     display: none;
 }
 
+.page_media_link_img {
+    width: auto;
+}
+
 /*unread messages overflow*/
 .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {
     bottom: 11px !important;
