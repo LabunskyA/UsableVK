@@ -50,3 +50,16 @@
 .im-page .im-page--top-date-bar {
     display: none;
 }
+
+/*unread messages overflow*/
+.nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {
+    bottom: 11px !important;
+    right: 15px;
+
+    width: 523px;
+    height: 26px;
+
+    border-radius: 0;
+
+    background: rgba(147,173,200,0.2);
+}
