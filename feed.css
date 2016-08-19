@@ -15,16 +15,12 @@
     float: left;
 }
 
-.post_full_like_wrap .post_like, .post_full_like_wrap .post_share {
-    float: right;
-}
-
 .post_full_like_wrap .post_like {
     margin-right: -7px;
 }
 
 .post_field_user_image, .post_img {
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .post_full_like_wrap {
@@ -48,7 +44,6 @@
     padding: 8px 20px 10px;
 }
 
-
 .wall_module .replies_list {
     border-top: none;
 }
@@ -63,4 +58,8 @@
 
 .wall_module .post_header {
     padding: 0 20px 0;
+}
+
+.feed_has_new .feed_new_posts {
+    margin-bottom: 25px;
 }
