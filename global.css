@@ -4,19 +4,28 @@ body {
 
 .online:after, .chat_tab_imgcont.online:after {
     background-color: #8ac176;
-    border: 0;
-    border-radius: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
-.top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img {
-    border-radius: 10%;
+.top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .friends_photo_img, .right_list_img, .group_row_photo, .group_row_img, .page_list_module .thumb, .post_img, .page_list_module .cell_img, .post_field_user_image, .wall_module .copy_post_img, .module_body .people_cell_img, .ow_ava.ow_ava_comm {
+    border-radius: 5%;
 }
 
 .chat_tab_counter, .nim-dialog.nim-dialog_failed .nim-dialog--unread, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .nim-dialog.nim-dialog_unread.nim-dialog_prep-injected .nim-dialog--unread {
     background-color: #7293b6;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .chat_onl_inner {
     background-color: white;
+}
+
+
+/*
+Feed things
+It must be global, other way group feed will not be affected
+*/
+.post_full_like_wrap .post_like, .post_full_like_wrap .post_share {
+    float: right;
 }
