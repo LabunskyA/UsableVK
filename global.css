@@ -8,7 +8,7 @@ body {
     border-radius: 50%;
 }
 
-.fans_idolph_wrap, .ui_zoom_inner, .top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .friends_photo_img, .right_list_img, .group_row_photo, .group_row_img, .page_list_module .thumb, .post_img, .page_list_module .cell_img, .post_field_user_image, .wall_module .copy_post_img, .module_body .people_cell_img, .ow_ava.ow_ava_comm {
+.audio_play, .ts_contact_img, input.text.ts_input, .fans_idolph_wrap, .ui_zoom_inner, .top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .friends_photo_img, .right_list_img, .group_row_photo, .group_row_img, .page_list_module .thumb, .post_img, .page_list_module .cell_img, .post_field_user_image, .wall_module .copy_post_img, .module_body .people_cell_img, .ow_ava.ow_ava_comm {
     border-radius: 5%;
 }
 
@@ -19,6 +19,10 @@ body {
 
 .chat_onl_inner {
     background-color: white;
+}
+
+.top_nav_link.top_profile_link {
+    display: none;
 }
 
 /*
