@@ -3,16 +3,11 @@
 }
 
 .wide_column_left .wide_column_wrap {
-    margin-right: 15%;
+    margin-right: 149px;
 }
 
 .feed_row {
     padding-bottom: 25px;
-}
-
-.post_full_like_wrap .reply_link_wrap {
-    margin-left: -7px;
-    float: left;
 }
 
 .post_full_like_wrap .post_like {
@@ -63,3 +58,5 @@
 .feed_has_new .feed_new_posts {
     margin-bottom: 25px;
 }
+
+/*post size w: 1,245098039, h: */

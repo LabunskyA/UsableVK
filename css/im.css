@@ -1,3 +1,6 @@
+/*
+IM main panel width
+*/
 .im-page.im-page_classic .im-mess-stack {
     max-width: 635px;
 }
@@ -6,6 +9,9 @@
     width: 635px !important;
 }
 
+/*
+Chat input size
+*/
 .im-chat-input.im-chat-input_classic .im-chat-input--textarea {
     width: 463px;
 }
@@ -66,15 +72,21 @@
     width: 635px;
 }
 
-/*left panel*/
+/*right panel*/
 .im-right-menu.ui_rmenu {
     padding: 0;
     top: 28px;
     margin-left: 636px;
+    max-width: 187px;
 }
 
 .ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover {
-    max-width: 134px; /*159px - 25px side padding*/
+    background: linear-gradient(90deg, #f5f7fa 154px, #ffffff 50%);
+    /*max-width: 134px; !*159px - 25px side padding*!*/
+}
+
+.im-right-menu.ui_rmenu .im-right-menu--text {
+    max-width: 121px;
 }
 
 .ui_rmenu_sep {
