@@ -1,11 +1,11 @@
 /*
 IM main panel width
 */
-.im-page.im-page_classic .im-mess-stack {
+.im-page.im-page_classic .im-mess-stack, .im-page.im-page_classic .im-page--dialogs-footer {
     max-width: 635px;
 }
 
-.im-page.im-page_classic, .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header, .im-page.im-page_classic .im-page--chat-input {
+.im-page.im-page_classic .im-page--dialogs-search, .im-page.im-page_classic, .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header, .im-page.im-page_classic .im-page--chat-input {
     width: 635px !important;
 }
 
@@ -64,7 +64,14 @@ Chat input size
 
     border-radius: 0;
 
-    background: rgba(147,173,200,0.2);
+    background: rgba(147, 173, 200, 0.2);
+}
+
+/*
+borders
+*/
+.im-page.im-page_classic .im-page--dialogs {
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
 
 /*bottom panel*/
@@ -77,18 +84,18 @@ Chat input size
     padding: 0;
     top: 28px;
     margin-left: 636px;
-    max-width: 187px;
+    max-width: 191px;
 }
 
 .ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover {
-    background: linear-gradient(90deg, #f5f7fa 154px, #ffffff 50%);
+    background: linear-gradient(90deg, #f5f7fa 158px, #ffffff 50%);
     /*max-width: 134px; !*159px - 25px side padding*!*/
 }
 
 .im-right-menu.ui_rmenu .im-right-menu--text {
-    max-width: 121px;
+    max-width: 126px;
 }
 
 .ui_rmenu_sep {
-    max-width: 129px;
+    max-width: 128px;
 }

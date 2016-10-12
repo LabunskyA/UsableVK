@@ -18,45 +18,17 @@
     border-radius: 5%;
 }
 
-.post_full_like_wrap {
-    border-top: 0;
-}
-
-.page_block {
-    box-shadow: none;
-}
-
 .feed_submit_shown .feed_post_field_wrap {
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
-}
-
-.post_full_like_wrap {
-    border-top: 0;
-    padding: 5px 0 0;
-}
-
-.wall_module .wall_text {
-    padding: 8px 20px 10px;
-}
-
-.wall_module .replies_list {
-    border-top: none;
-}
-
-.wall_module .reply_box, .wall_module .reply_fakebox_wrap {
-    margin-left: 20px;
-}
-
-.wall_module .wall_text .page_media_thumbed_link:last-child {
-    margin-bottom: 0;
-}
-
-.wall_module .post_header {
-    padding: 0 20px 0;
 }
 
 .feed_has_new .feed_new_posts {
     margin-bottom: 25px;
 }
 
-/*post size w: 1,245098039, h: */
+/*
+None borders
+*/
+.page_block {
+    box-shadow: none;
+}
