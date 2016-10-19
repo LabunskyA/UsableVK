@@ -67,9 +67,16 @@ Chat input size
     background: rgba(147, 173, 200, 0.2);
 }
 
-/*
-borders
-*/
+.nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted):hover .nim-dialog--inner-text {
+    background: none;
+}
+
+/*Your avatar near message*/
+.nim-dialog .nim-dialog--who {
+    display: none;
+}
+
+/*borders*/
 .im-page.im-page_classic .im-page--dialogs {
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
