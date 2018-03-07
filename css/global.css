@@ -32,8 +32,12 @@ Online indicator style
 /*
 Things in circles should be squared!
 */
-.wddi_img, .ui_ownblock_img, .like_tt_image, .poll_tt_image, .wpost_owner_head_thumb a, .wpost_owner_head_thumb img, .like_share_ava.wdd_imgs, .like_share_ava.wdd_imgs .wdd_img, .like_share_ava.wdd_imgs .wdd_img_full, .like_share_ava.wdd_imgs .wdd_img_half, .like_share_ava.wdd_imgs .wdd_img_tiny, a.fc_msgs_img, .audio_play, .ts_contact_img, input.text.ts_input, .fans_idolph_wrap, .ui_zoom_inner, .top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .friends_photo_img, .right_list_img, .group_row_photo, .group_row_img, .page_list_module .thumb, .post_img, .page_list_module .cell_img, .post_field_user_image, .wall_module .copy_post_img, .module_body .people_cell_img, .ow_ava.ow_ava_comm {
+.like_share_ava.wdd_imgs .wdd_img_full .wdd_img, .nim-peer.nim-peer_small .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_small .nim-peer--photo>img, .group_box_image, .olist_item_photo, .feedback_sticky_img, .mail_box_single_ava .mail_box_single_ava_img, .mv_author_photo, .fans_fan_img, .feedback_group_photo_img, .notifier_image, img.fc_contact_photo, .top_notify_cont .feedback_img, .feedback_img, .feedback_row_answer .feedback_img, .audio_page_player .audio_page_player_play .icon, .ow_ava.ow_ava_small, .mention_tt_person_img, .mention_tt_img, .group_friends_image, .wddi_img, .ui_ownblock_img, .like_tt_image, .poll_tt_image, .wpost_owner_head_thumb a, .wpost_owner_head_thumb img, .like_share_ava.wdd_imgs, .like_share_ava.wdd_imgs .wdd_img, .like_share_ava.wdd_imgs .wdd_img_full, .like_share_ava.wdd_imgs .wdd_img_half, .like_share_ava.wdd_imgs .wdd_img_tiny, a.fc_msgs_img, .audio_play, .ts_contact_img, .fans_idolph_wrap, .ui_zoom_inner, .top_profile_img, .wall_module .reply_img, .nim-peer .nim-peer--photo-w, .nim-peer.nim-peer_small .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .friends_photo_img, .right_list_img, .group_row_photo, .group_row_img, .page_list_module .thumb, .post_img, .page_list_module .cell_img, .post_field_user_image, .wall_module .copy_post_img, .module_body .people_cell_img, .ow_ava.ow_ava_comm {
     border-radius: 5%;
+}
+
+input.text.ts_input {
+    border-radius: 3px;
 }
 
 /*
@@ -90,6 +94,7 @@ None borders from posts
 
 .wall_module .reply_box, .wall_module .reply_fakebox_wrap {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .wall_module .wall_text .page_media_thumbed_link:last-child {
@@ -102,4 +107,16 @@ Borders for content tab
 .ui_tabs {
     border-bottom: none;
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+/*
+Phantom border in groups
+*/
+.wide_column .page_top+.page_block_h2 .ui_tabs.page_info_tabs {
+    box-shadow: none;
+}
+
+/*oprosi*/
+.wall_module .wall_text .page_media_poll_wrap:last-child {
+    margin-bottom: -10px;
 }
