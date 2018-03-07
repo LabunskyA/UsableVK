@@ -5,22 +5,36 @@ IM main panel width
     max-width: 635px;
 }
 
-.im-page.im-page_classic .im-page--dialogs-search, .im-page.im-page_classic, .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header, .im-page.im-page_classic .im-page--chat-input {
+.im-page_classic .im-page--chat-header, .im-page.im-page_classic .im-page--dialogs-search, .im-page.im-page_classic, .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header, .im-page.im-page_classic .im-page--chat-input {
     width: 635px !important;
+    border-top: none;
 }
 
+.im-page_classic.im-page .im-mess:not(.im-mess_fwd).im-mess_unread:not(.im-mess_selected):not(.im-mess_light) {
+    max-width: none;
+}
+
+
+
 /*
-Chat input size
+Chat input
 */
+.im-chat-input.im-chat-input_classic {
+    background: #ebeef2;
+    padding-right: 26px;
+}
+
 .im-chat-input.im-chat-input_classic .im-chat-input--textarea {
-    width: 463px;
+    width: 517px;
+    margin: 0 33px 0 33px;
 }
 
 .im-page.im-page_classic .im-mess:not(.im-mess_fwd) {
+    padding-right: 26px;
     max-width: 631px;
 }
 
-.im-right-menu.ui_rmenu {
+.page_block, .im-right-menu.ui_rmenu, .im-right-menu  {
     box-shadow: none;
 }
 
@@ -54,7 +68,16 @@ Chat input size
     width: auto;
 }
 
-/*unread messages overflow*/
+.nim-dialog.nim-dialog_classic .nim-dialog--text-preview {
+    margin-top: 0;
+}
+
+.nim-dialog.nim-dialog_unread-out.nim-dialog_muted:not(.nim-dialog_failed) .nim-dialog--text-preview, .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--text-preview, .nim-dialog.nim-dialog_unread.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--text-preview {
+    margin-top: -5px;
+    margin-left: -8px;
+}
+
+/*Unread messages overflow in list*/
 .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {
     bottom: 11px !important;
     right: 15px;
@@ -67,8 +90,18 @@ Chat input size
     background: rgba(147, 173, 200, 0.2);
 }
 
+.nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text {
+    max-width: 522px;
+    width: 522px;
+}
+
 .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted):hover .nim-dialog--inner-text {
     background: none;
+}
+
+/*In dialog*/
+.im-page.im-page_classic .im-mess:not(.im-mess_fwd).im-mess_unread:not(.im-mess_selected) {
+    max-width: none;
 }
 
 /*Your avatar near message*/
@@ -87,7 +120,7 @@ Chat input size
 }
 
 /*right panel*/
-.im-right-menu.ui_rmenu {
+.im-right-menu {
     padding: 0;
     top: 28px;
     margin-left: 636px;
@@ -105,4 +138,28 @@ Chat input size
 
 .ui_rmenu_sep {
     max-width: 128px;
+}
+
+/*Photo on the top, useless*/
+.im-page .im-page--nav-photo {
+    display: none;
+}
+
+/*Circles!*/
+.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo>img, .im-mess.im-mess_fwd .copy_post_img, .videoplayer_end_info_author_photo, .audio-msg-track .audio-msg-track--btn {
+    border-radius: 5%;
+}
+
+/*Record buttons*/
+.im-audio-message-input .im-audio-message-track {
+    border-radius: 1px;
+}
+
+/*Unread messages star*/
+.im-page.im-page_classic .im-mess:not(.im-mess_fwd).im-mess_unread:not(.im-mess_selected) {
+    padding-right: 2px;
+}
+
+.nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text {
+    padding: 5px 5px 5px 8px;
 }
