@@ -6,9 +6,9 @@
     margin-right: 149px;
 }
 
-.feed_row {
-    padding-bottom: 25px;
-}
+/*.feed_row {*/
+    /*padding-bottom: 25px;*/
+/*}*/
 
 .post_full_like_wrap .post_like {
     margin-right: -7px;
@@ -26,9 +26,57 @@
     margin-bottom: 25px;
 }
 
+.page_post_sized_thumbs {
+    height: 100% !important;
+}
+
 /*
 None borders
 */
 .page_block {
     box-shadow: none;
+}
+
+/*likes*/
+
+.like_cont {
+    display: inline-block;
+    width: 100%;
+
+    border-top: none;
+    height: 14px;
+}
+
+.like_btns, .like_btn {
+    float: right;
+    display: inline-block;
+    height: 14px;
+}
+
+.like_btn:first-child {
+    margin-left: 10px;
+}
+
+.like_btn {
+    display: inline-flex;
+}
+
+.like_button_icon {
+    width: 14px;
+    height: 14px;
+}
+
+.like_button_count {
+    font-weight: normal;
+    height: 14px;
+}
+
+.like_views {
+    display: inline-flex;
+    height: 14px;
+    line-height: 16px;
+}
+
+a.like_btn.comment {
+    display: none;
 }
