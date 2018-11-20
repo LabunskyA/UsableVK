@@ -2,12 +2,12 @@
 IM main panel width
 */
 .im-page.im-page_classic .im-mess-stack, .im-page.im-page_classic .im-page--dialogs-footer {
-    max-width: 635px;
+    max-width: 635px !important;
 }
 
 .im-page_classic .im-page--chat-header, .im-page.im-page_classic .im-page--dialogs-search, .im-page.im-page_classic, .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header, .im-page.im-page_classic .im-page--chat-input {
     width: 635px !important;
-    border-top: none;
+    border-top: none !important;
 }
 
 .im-page_classic.im-page .im-mess:not(.im-mess_fwd).im-mess_unread:not(.im-mess_selected):not(.im-mess_light) {
@@ -25,13 +25,13 @@ Chat input
 }
 
 .im-chat-input.im-chat-input_classic .im-chat-input--textarea {
-    width: 517px;
+    width: 517px !important;
     margin: 0 33px 0 33px;
 }
 
 .im-page.im-page_classic .im-mess:not(.im-mess_fwd) {
-    padding-right: 26px;
-    max-width: 631px;
+    padding-right: 26px !important;
+    max-width: 631px !important;
 }
 
 .page_block, .im-right-menu.ui_rmenu, .im-right-menu  {
@@ -56,7 +56,7 @@ Chat input
 }
 
 .im-page.im-page_classic .im-page--header-chat, .im-page.im-page_classic .im-page--header {
-    width: 550px;
+    width: 550px !important;
     margin-left: 0;
 }
 
@@ -82,7 +82,7 @@ Chat input
     bottom: 11px !important;
     right: 15px;
 
-    width: 522px;
+    width: 522px !important;
     height: 26px;
 
     border-radius: 0;
@@ -91,8 +91,8 @@ Chat input
 }
 
 .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text {
-    max-width: 522px;
-    width: 522px;
+    max-width: 522px !important;
+    width: 522px !important;
 }
 
 .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted):hover .nim-dialog--inner-text {
@@ -122,8 +122,8 @@ Chat input
 /*right panel*/
 .im-right-menu {
     padding: 0;
-    top: 28px;
-    margin-left: 636px;
+    top: 21px !important;
+    margin-left: 636px !important;
     max-width: 191px;
 }
 
@@ -133,11 +133,11 @@ Chat input
 }
 
 .im-right-menu.ui_rmenu .im-right-menu--text {
-    max-width: 126px;
+    max-width: 126px !important;
 }
 
 .ui_rmenu_sep {
-    max-width: 128px;
+    max-width: 128px !important;
 }
 
 /*Photo on the top, useless*/
@@ -147,7 +147,7 @@ Chat input
 
 /*Circles!*/
 .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo>img, .im-mess.im-mess_fwd .copy_post_img, .videoplayer_end_info_author_photo, .audio-msg-track .audio-msg-track--btn {
-    border-radius: 5%;
+    border-radius: 5% !important;
 }
 
 /*Record buttons*/
