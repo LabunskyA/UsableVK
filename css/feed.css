@@ -40,43 +40,43 @@ None borders
 /*likes*/
 
 .like_cont {
-    display: inline-block;
+    display: inline-block !important;
     width: 100%;
 
     border-top: none;
-    height: 14px;
+    height: 18px !important;
 }
 
 .like_btns, .like_btn {
     float: right;
-    display: inline-block;
-    height: 14px;
+    display: inline-block !important;
+    height: 18px !important;
 }
 
 .like_btn:first-child {
-    margin-left: 10px;
+    margin-left: 18px !important;
 }
 
 .like_btn {
-    display: inline-flex;
+    display: inline-flex !important;
 }
 
 .like_button_icon {
-    width: 14px;
-    height: 14px;
+    width: 18px !important;
+    height: 18px !important;
 }
 
 .like_button_count {
     font-weight: normal;
-    height: 14px;
+    height: 18px !important;
 }
 
 .like_views {
-    display: inline-flex;
-    height: 14px;
-    line-height: 16px;
+    display: inline-flex !important;
+    height: 18px !important;
+    line-height: 20px !important;
 }
 
 a.like_btn.comment {
-    display: none;
+    display: none !important;
 }
