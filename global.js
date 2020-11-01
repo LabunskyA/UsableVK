@@ -147,21 +147,31 @@
 })();
 
 function do_resize() {
-    var c = 606/510;
-    var els = document.getElementsByClassName('page_post_sized_thumbs');
+    const els = document.getElementsByClassName('page_post_sized_thumbs');
 
-    for (var i = 0; i < els.length; i++) {
-        if (!els[i].getAttribute('labunsky_resized') && els[i].offsetWidth / els[i].offsetHeight > 0.85) {
-            els[i].style.width = els[i].offsetWidth * c + "px";
-            els[i].style.height = els[i].offsetHeight * c + "px";
+    for (let i = 0; i < els.length; i++) {
+        if (!els[i].getAttribute('labunsky_resized')) {
+            els[i].setAttribute('labunsky_resized', 'yup');
 
-            var imgs = els[i].getElementsByClassName('page_post_thumb_wrap');
-            for (var j = 0; j < imgs.length; j++) {
-                imgs[j].style.width = imgs[j].offsetWidth * c + "px";
-                imgs[j].style.height = imgs[j].offsetHeight * c + "px";
+            if (els[i].offsetHeight < els[i].offsetWidth && els.length <= 1)
+                continue;
+
+            const true_parent_classes = els[i].parentElement.parentElement.classList;
+            if (true_parent_classes.contains("reply_text") || true_parent_classes.contains("im-mess--text"))
+                continue;
+
+            let c = 510 / els[i].offsetWidth;
+            if (els[i].offsetHeight / els[i].offsetWidth >= 2)
+                c = 1.25;
+
+            const imgs = els[i].getElementsByClassName('page_post_thumb_wrap');
+            for (let j = 0; j < imgs.length; j++) {
+                imgs[j].style.width = Math.floor(imgs[j].offsetWidth * c) + "px";
+                imgs[j].style.height = Math.floor(imgs[j].offsetHeight * c) + "px";
             }
 
-            els[i].setAttribute('labunsky_resized', 'yup');
+            els[i].style.height = "auto";
+            els[i].style.width = Math.floor(els[i].offsetWidth * c) + "px";
         }
     }
 }

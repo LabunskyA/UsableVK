@@ -1,0 +1,122 @@
+/* Реклама */
+#ads_left/*, ._ads_block_data_w*/ {
+    display: none;
+}
+
+/* Квадратизация и забор удалени могильного цвета */
+body, .chat_onl_inner {
+    background: 0;
+}
+
+.TopSearch__input {
+    border-radius: 0;
+}
+
+#stl_side {
+    display: none;
+}
+
+.icon, .nim-peer--photo-w, .nim-peer--photo-w img, .post_header img, .top_profile_img, .im-prebody img, .post_field_user_image, .chat_tab_img, .people_cell_img, .thumb, .reply_img, .group_friends_image, .ow_ava.ow_ava_small, .notifier_image, .chat_tab_counter, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .feedback_img, .feedback_attachments .notification__media.circle, .feed_new_posts>b, .like_tt_image, .copy_post_img, .ts_contact_img, .post_img, .im-page--top-date-bar, .top_profile_vkconnect_img, .like_share_ava.wdd_imgs, .wddi_img {
+    border-radius: 5%;
+}
+
+.online::after {
+    border-width: 1px;
+}
+
+.im-page_classic .im-page--chat-header, .im-page--header {
+    border-top: 0;
+}
+
+.im-right-menu {
+    margin-top: 34px;
+}
+
+.im-right-menu div {
+    border-radius: 0;
+}
+
+.im-page_classic.im-page .im-page--chat-input {
+    border: 0;
+}
+
+.im-page_classic.im-page .im-page--chat-body-wrap-inner {
+    padding: 0;
+    /*border: 0;*/
+}
+
+.im-prebody {
+    display: none;
+}
+
+.im-page {
+    padding-top: 0;
+}
+
+.feed_new_posts {
+    border-bottom: 0;
+}
+
+/* Изменение строки с лайками и пр. */
+.like_cont {
+    border-top: 0;
+    padding: 2px 0 15px 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.like_btns {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.like_btn {
+    margin-left: 7px;
+}
+
+/*.like_btn:first-child {*/
+/*    margin-left: -7px;*/
+/*}*/
+
+.like_btn.like .like_button_icon, .like_btn.comment .like_button_icon, .like_btn.share .like_button_icon {
+    height: 20px;
+}
+
+.like_button_count {
+    margin-left: 4px;
+}
+
+.replies .like_cont {
+    padding: 0 13px;
+}
+
+.reply_wrap {
+    border: 0;
+}
+
+.deep_active .replies .reply_box_inner_wrap {
+    padding-bottom: 3px;
+}
+
+.wall_module .wall_text {
+    padding: 8px 20px;
+}
+
+/* Центрирование портретных картинок в постах */
+.page_post_sized_thumbs {
+    margin: auto;
+}
+
+.im-mess .page_post_sized_thumbs {
+    margin: 0;
+}
+
+.replies .page_post_sized_thumbs {
+    margin: 0;
+}
+
+/* Кривое выравнивание по высоте ссылок и карт в поста */
+.wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child, .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child {
+    margin-bottom: 0;
+}
