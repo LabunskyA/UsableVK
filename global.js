@@ -156,8 +156,14 @@ function do_resize() {
             if (els[i].offsetHeight < els[i].offsetWidth && els.length <= 1)
                 continue;
 
-            const true_parent_classes = els[i].parentElement.parentElement.classList;
-            if (true_parent_classes.contains("reply_text") || true_parent_classes.contains("im-mess--text"))
+            let parent = els[i].parentElement;
+            while (parent) {
+                if (parent.classList.contains("reply_text") || parent.classList.contains("im-mess--text"))
+                    break;
+                parent = parent.parentElement;
+            }
+
+            if (parent)
                 continue;
 
             let c = 510 / els[i].offsetWidth;
