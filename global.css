@@ -16,7 +16,7 @@ body, .chat_onl_inner {
     display: none;
 }
 
-.icon, .nim-peer--photo-w, .nim-peer--photo-w img, .post_header img, .top_profile_img, .im-prebody img, .post_field_user_image, .chat_tab_img, .people_cell_img, .thumb, .reply_img, .group_friends_image, .ow_ava.ow_ava_small, .notifier_image, .chat_tab_counter, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .feedback_img, .feedback_attachments .notification__media.circle, .feed_new_posts>b, .like_tt_image, .copy_post_img, .ts_contact_img, .post_img, .im-page--top-date-bar, .top_profile_vkconnect_img, .like_share_ava.wdd_imgs, .wddi_img {
+.icon, .nim-peer--photo-w, .nim-peer--photo-w img, .post_header img, .top_profile_img, .im-prebody img, .post_field_user_image, .chat_tab_img, .people_cell_img, .thumb, .reply_img, .group_friends_image, .ow_ava.ow_ava_small, .notifier_image, .chat_tab_counter, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .feedback_img, .feedback_attachments .notification__media.circle, .feed_new_posts>b, .like_tt_image, .copy_post_img, .ts_contact_img, .post_img, .im-page--top-date-bar, .top_profile_vkconnect_img, .like_share_ava.wdd_imgs, .wddi_img, .ow_ava.ow_ava_comm {
     border-radius: 5%;
 }
 
@@ -75,10 +75,6 @@ body, .chat_onl_inner {
     margin-left: 7px;
 }
 
-/*.like_btn:first-child {*/
-/*    margin-left: -7px;*/
-/*}*/
-
 .like_btn.like .like_button_icon, .like_btn.comment .like_button_icon, .like_btn.share .like_button_icon {
     height: 20px;
 }
@@ -87,7 +83,7 @@ body, .chat_onl_inner {
     margin-left: 4px;
 }
 
-.replies .like_cont {
+.reply_footer .like_cont, .replies .like_cont {
     padding: 0 13px;
 }
 
