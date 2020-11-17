@@ -16,7 +16,7 @@ body, .chat_onl_inner {
     display: none;
 }
 
-.icon, .nim-peer--photo-w, .nim-peer--photo-w img, .post_header img, .top_profile_img, .im-prebody img, .post_field_user_image, .chat_tab_img, .people_cell_img, .thumb, .reply_img, .group_friends_image, .ow_ava.ow_ava_small, .notifier_image, .chat_tab_counter, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .feedback_img, .feedback_attachments .notification__media.circle, .feed_new_posts>b, .like_tt_image, .copy_post_img, .ts_contact_img, .post_img, .im-page--top-date-bar, .top_profile_vkconnect_img, .like_share_ava.wdd_imgs, .wddi_img, .ow_ava.ow_ava_comm {
+.icon, .nim-peer--photo-w, .nim-peer--photo-w img, .post_header img, .top_profile_img, .im-prebody img, .post_field_user_image, .chat_tab_img, .people_cell_img, .thumb, .reply_img, .group_friends_image, .ow_ava.ow_ava_small, .notifier_image, .chat_tab_counter, .nim-dialog.nim-dialog_unread .nim-dialog--unread, .feedback_img, .feedback_attachments .notification__media.circle, .feed_new_posts>b, .like_tt_image, .copy_post_img, .ts_contact_img, .post_img, .im-page--top-date-bar, .top_profile_vkconnect_img, .like_share_ava.wdd_imgs, .wddi_img, .ow_ava.ow_ava_comm, .audio-msg-track .audio-msg-track--btn, .im-page_classic .im-popular--avatar, .mention_tt_img, .mention_tt_person_img, .page_group_image, .search_item_img, .fans_fan_img, .Avatar__wrapper {
     border-radius: 5%;
 }
 
@@ -86,6 +86,7 @@ body, .chat_onl_inner {
 .reply_footer .like_cont, .replies .like_cont {
     padding: 0 13px;
 }
+
 
 .reply_wrap {
     border: 0;

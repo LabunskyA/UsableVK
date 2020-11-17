@@ -153,7 +153,7 @@ function do_resize() {
         if (!els[i].getAttribute('labunsky_resized')) {
             els[i].setAttribute('labunsky_resized', 'yup');
 
-            if (els[i].offsetHeight < els[i].offsetWidth && els.length <= 1)
+            if (els[i].offsetWidth == 510 && els.length <= 1)
                 continue;
 
             let parent = els[i].parentElement;
@@ -166,18 +166,19 @@ function do_resize() {
             if (parent)
                 continue;
 
-            let c = 510 / els[i].offsetWidth;
-            if (els[i].offsetHeight / els[i].offsetWidth >= 2)
-                c = 1.25;
-
             const imgs = els[i].getElementsByClassName('page_post_thumb_wrap');
+
+            let c = 510 / els[i].offsetWidth;
+            if (imgs.length == 1 && Math.ceil(c * imgs[0].offsetHeight) > 680)
+            	c = 680 / imgs[0].offsetHeight;
+
             for (let j = 0; j < imgs.length; j++) {
-                imgs[j].style.width = Math.floor(imgs[j].offsetWidth * c) + "px";
-                imgs[j].style.height = Math.floor(imgs[j].offsetHeight * c) + "px";
+                imgs[j].style.width = Math.ceil(imgs[j].offsetWidth * c) + "px";
+                imgs[j].style.height = Math.ceil(imgs[j].offsetHeight * c) + "px";
             }
 
             els[i].style.height = "auto";
-            els[i].style.width = Math.floor(els[i].offsetWidth * c) + "px";
+            els[i].style.width = Math.ceil(els[i].offsetWidth * c) + "px";
         }
     }
 }
